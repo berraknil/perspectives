@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Topics from './Perspectives'
 
 const Home = () => {
   return (
