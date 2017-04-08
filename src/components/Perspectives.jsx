@@ -7,32 +7,28 @@ import {
 
 const Topics = ({ match }) => (
   <div>
-    <h2>Topics</h2>
     <ul>
       <li>
         <Link to={`${match.url}/one`}>
-          One Point Perspective
+          1
         </Link>
       </li>
       <li>
-        <Link to={`${match.url}/rendering`}>
-          Rendering with React
+        <Link to={`${match.url}/two`}>
+          2
         </Link>
       </li>
       <li>
-        <Link to={`${match.url}/components`}>
-          Components
+        <Link to={`${match.url}/three`}>
+         3
         </Link>
       </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>
-          Props v. State
-        </Link>
-      </li>
+      
     </ul>
 
-    <Route path={`${match.url}/:topicId`} component={Topic}/>
       <Route path={`${match.url}/one`} component={OnePoint}/>
+      <Route path={`${match.url}/two`} component={TwoPoint}/>
+      <Route path={`${match.url}/three`} component={ThreePoint}/>
     <Route exact path={match.url} render={() => (
       <h3>Please select a topic.</h3>
     )}/>
@@ -41,12 +37,9 @@ const Topics = ({ match }) => (
   </div>
 )
 
-const OnePoint = () => <h2>ONE POINT PERSPECTIVE</h2>
+const OnePoint = () => <h4>ONE POINT PERSPECTIVE</h4>
+const TwoPoint = () => <h4>TWO POINT PERSPECTIVE</h4>
+const ThreePoint = () => <h4>THREE POINT PERSPECTIVE</h4>
 
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-)
 
 export default Topics
