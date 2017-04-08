@@ -10,7 +10,8 @@ import Resources from './components/Resources'
 import Perspectives from './components/Perspectives'
 import './App.css';
 
-const BasicExample = () => (
+const BasicExample = ({ match }) => (
+  <div>
   <Router>
     <div>
       <ul>
@@ -28,6 +29,7 @@ const BasicExample = () => (
       <Route path="/perspectives" component={Perspectives}/>
     </div>
   </Router>
+  </div>
 )
 
 export default BasicExample
