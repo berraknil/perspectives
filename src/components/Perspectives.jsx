@@ -5,7 +5,7 @@ import {
   Link
 } from 'react-router-dom'
 
-const Topics = ({ match }) => (
+const Perspectives = ({ match }) => (
   <div>
     <ul>
       <li>
@@ -29,8 +29,8 @@ const Topics = ({ match }) => (
       <Route path={`${match.url}/one`} component={OnePoint}/>
       <Route path={`${match.url}/two`} component={TwoPoint}/>
       <Route path={`${match.url}/three`} component={ThreePoint}/>
-    <Route exact path={match.url} render={() => (
-      <h3>Please select a topic.</h3>
+    <Route path={match.url} render={() => (
+      <h1>PERSPECTIVES</h1>
     )}/>
 
 
@@ -42,4 +42,4 @@ const TwoPoint = () => <h4>TWO POINT PERSPECTIVE</h4>
 const ThreePoint = () => <h4>THREE POINT PERSPECTIVE</h4>
 
 
-export default Topics
+export default Perspectives
