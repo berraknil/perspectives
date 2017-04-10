@@ -1,10 +1,11 @@
 import React from 'react';
+import Content from './Content'
 
 const Main = (props) => {
   return (
-    <div>
-      <h2>This is Main Info Page</h2>
-    </div>
+    <Content>
+      MAIN CONTENT GOES HERE
+    </Content>
   );
 };
 
