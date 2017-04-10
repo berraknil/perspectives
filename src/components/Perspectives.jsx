@@ -4,10 +4,15 @@ import { Route, NavLink } from 'react-router-dom';
 const OnePoint = () => <h4>ONE POINT PERSPECTIVE</h4>;
 const TwoPoint = () => <h4>TWO POINT PERSPECTIVE</h4>;
 const ThreePoint = () => <h4>THREE POINT PERSPECTIVE</h4>;
+const Hello = () => <h4>HELLO</h4>;
 
 const Perspectives = ({ match }) => (
   <div>
-    <ul>
+    <ul> <li>
+        <NavLink activeClassName="active" to={`${match.url}`}>
+          1
+        </NavLink>
+      </li>
       <li>
         <NavLink activeClassName="active" to={`${match.url}/one`}>
           1
@@ -29,8 +34,7 @@ const Perspectives = ({ match }) => (
     <Route path={`${match.url}/one`} component={OnePoint} />
     <Route path={`${match.url}/two`} component={TwoPoint} />
     <Route path={`${match.url}/three`} component={ThreePoint} />
-    <Route path={match.url} render={() => <h1>PERSPECTIVES</h1>} />
-
+    <Route path={`${match.url}`} component={Hello} />
   </div>
 );
 
