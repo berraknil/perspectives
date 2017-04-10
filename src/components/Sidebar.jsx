@@ -5,14 +5,21 @@ import {
   Link
 } from 'react-router-dom'
 
+import OnePoint from './OnePoint'
+import Home from './Home'
+
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
 // render both of them in different places when the
 // path matches the current URL.
 const routes = [
+   { path: '/',
+    //sidebar: () => <div>One</div>,
+    //main: () => <Home />
+  },
   { path: '/one',
     //sidebar: () => <div>One</div>,
-    main: () => <h2>One</h2>
+    main: () => <OnePoint />
   },
   { path: '/two',
     //sidebar: () => <div>Two</div>,
@@ -33,6 +40,7 @@ const SidebarExample = () => (
         background: '#f0f0f0'
       }}>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
+          <li><Link to="/">Main</Link></li>
           <li><Link to="/one">One</Link></li>
           <li><Link to="/two">Two</Link></li>
           <li><Link to="/three">Three</Link></li>
