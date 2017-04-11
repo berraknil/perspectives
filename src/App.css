@@ -1,12 +1,8 @@
-
 a {
-  margin: 1em;
-}
+  margin: 1em; }
 
 a, a:visited {
-  color: blue;
-}
+  color: blue; }
 
 a.active {
-  color: red;
-}
+  color: red; }
