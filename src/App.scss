@@ -1,12 +1,35 @@
 
 a {
   margin: 1em;
+  color: inherit;
 }
 
-a, a:visited {
+a:visited {
   color: blue;
 }
 
 a.active {
   color: red;
+}
+
+
+.navigation {
+  background: darkgrey;
+  border: 1px solid red;
+  color: white;
+  flex-basis: 10vmin;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page {
+  border: 1px solid green;  
+  flex: 1;
+  min-height: 100%;
+  background: beige;
 }
