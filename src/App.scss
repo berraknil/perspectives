@@ -1,23 +1,32 @@
+@import './typography.scss';
 
 a {
-  margin: 1em;
-  color: inherit;
-}
+  text-decoration: none;
+  background: black;
+	color: currentColor;
+  padding: .7rem 1rem;
+  padding-right: 3rem;
+  margin: .5rem 0;
+  display: block;
 
-a:visited {
-  color: blue;
-}
-
-a.active {
-  color: red;
+  &.active {
+    background: white;
+    color: black;
+  }
 }
 
 
 .navigation {
-  background: darkgrey;
-  border: 1px solid red;
+  //background:#E6E3DF;
+  //border: 1px solid black;
   color: white;
-  flex-basis: 10vmin;
+  flex-basis: 30vmin;
+  //align-items: center;
+  justify-content: flex-end;
+  display: flex; 
+  //min-height: 100%;
+  //padding-left: 1rem;
+  font-family: $title-font-one;
 }
 
 .main {
@@ -28,8 +37,9 @@ a.active {
 }
 
 .page {
-  border: 1px solid green;  
+  border: 1px solid black;  
   flex: 1;
   min-height: 100%;
-  background: beige;
+  //background: beige;
+
 }

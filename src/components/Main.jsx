@@ -4,7 +4,7 @@ import Content from './Content'
 const Main = (props) => {
   return (
     <Content>
-      MAIN CONTENT GOES HERE
+      <h1>Types of Perspective</h1>
     </Content>
   );
 };

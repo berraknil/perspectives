@@ -1,10 +1,11 @@
 import React from 'react';
+import Content from './Content'
 
-const About = () => {
+const About = (props) => {
   return (
-    <div>
- ABOUT STUFF!!
-    </div>
+    <Content>
+      <h3>ABOUT</h3>
+    </Content>
   );
 };
 
