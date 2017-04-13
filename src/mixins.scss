@@ -1,0 +1,210 @@
+@import 'https://fonts.googleapis.com/css?family=Trocchi';
+@import 'https://fonts.googleapis.com/css?family=Lato';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+@mixin bp-medium {
+  @media screen and (min-width:700px) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media screen and (min-width:1366px) {
+    @content;
+  }
+}
+
+@mixin bp-xlarge {
+  @media screen and (min-width:1900px) {
+    @content;
+  }
+}
+
+//Color Variables
+$background-color: #ECF0F1;
+$black: #000000;
+$green: #AEEE00;
+$pink: #FF358B;
+$skyblue: #01B0F0;
+
+
+$main-font: 'Lato', sans-serif;
+$title-font: 'Raleway', serif;
+$title-font2: 'Trocchi', cursive;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  color: $black;
+  font-family: $main-font;
+  font-size: 100%;
+}
+
+h1, h2, h3 {
+    font-family: $title-font;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+   @include bp-large {
+    width: 70%;
+   }
+   @include bp-xlarge {
+    width: 60%;
+   }
+  margin: auto;
+}
+
+.fa {
+  color: $skyblue;
+}
+
+.links {
+  padding: 0rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  font-size: .7em;
+  align-self: center;
+  @include bp-medium {
+      flex-basis: 30%;
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+}
+
+header {
+  width: 80%;
+    h1 {
+        font-family: $title-font2;
+        color: $pink;
+        font-weight: 500;
+        font-size: 2em;
+        margin: 1rem 0rem .5rem;
+        text-align: center;
+    }
+     @include bp-medium {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+          h1 {
+          text-align: left;
+          font-size: 2.5em;
+        }
+      }
+    @include bp-large {
+          h1 {
+          font-size: 3em;
+        }
+      }
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  flex:1;
+  @include bp-medium {
+    width: 80%;
+    justify-content: space-between;
+  }
+
+}
+
+section {
+  flex-basis: 80%;
+  border-bottom: .2rem solid $skyblue;
+  border-left: .2rem solid $skyblue;
+  padding: 0 1rem;
+  h2 {
+    font-size: 1.7em;
+      padding:0;
+      margin: 0;
+      //margin-left: 10%;
+  }
+  ul {
+    line-height: 1.5rem;
+    padding:0;
+    list-style-type: square;
+    list-style-position: inside;
+  }
+  @include bp-medium {
+     flex-basis: 60%;
+      margin: .5rem 0rem;
+  }
+  @include bp-large {
+    flex-basis: 70%;
+  }
+
+}
+
+aside {
+  display: flex;
+  flex-basis: 80%;
+  border-top: .2rem solid $pink;
+  border-right: .2rem solid $pink;
+  flex-direction: column;
+  order: -1;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  img {
+    display: none;
+
+  }
+  a {
+    color: $pink;
+  }
+  p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: center;
+    //padding: .2rem;
+    //margin: .1rem;
+    margin-top: 0;
+  }
+    @include bp-medium {
+      order: 0;
+      margin: .5rem 0rem;
+     flex-basis: 30%;
+     padding: .5rem;
+      p{
+        margin: .5rem;
+      }
+      img {
+        display: flex;
+        margin-bottom: 1rem;
+      }
+  }
+  @include bp-large {
+    //flex-basis: 25%;
+  }
+}
+
+
+
+footer {
+  text-align: center;
+
+}
+
+

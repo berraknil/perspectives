@@ -10,7 +10,8 @@
   "devDependencies": {
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "typi": "^3.0.0"
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",
