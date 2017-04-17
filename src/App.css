@@ -246,12 +246,14 @@ a {
   text-decoration: none;
   color: currentColor;
   font-size: 16px;
+  background: black;
   display: block;
   min-height: 100%;
-  padding: .5rem; }
-  a.active {
-    background: white;
-    color: black; }
+  padding: .6rem; }
+
+a.active {
+  background: white;
+  color: black; }
 
 .main {
   display: flex;
@@ -270,10 +272,18 @@ a {
   flex-wrap: nowrap;
   text-align: center;
   align-items: center; }
-  .navigation__list li {
-    background: black;
-    flex: 1 1 auto;
-    border: 1px solid white; }
+
+.navigation__list li {
+  flex: 1;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none; }
+
+.navigation__list li:first-child {
+  border-left: none; }
+
+.navigation__list li:last-child {
+  border-right: none; }
 
 .page {
   border: 1px solid black; }

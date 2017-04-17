@@ -5,13 +5,14 @@ a {
   text-decoration: none;
   color: currentColor;
   font-size: 16px;
+    background: black;
   &.active {
     background: white;
     color: black;
   }
   display: block;
   min-height: 100%;
-  padding: .5rem;
+  padding: .6rem;
 }
 
 .main {
@@ -34,10 +35,17 @@ a {
   text-align: center; //width:100%;
   align-items: center;
   li {
-    background: black;
-    flex:1 1 auto;
+    //flex:1 1 auto;
+    flex: 1;
     border: 1px solid white;
-
+    border-top: none;
+    border-bottom: none;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
   }
 }
 
