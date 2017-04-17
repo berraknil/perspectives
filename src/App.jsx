@@ -25,11 +25,23 @@ const App = () => (
       <div className="navigation">
         <ul>
           <li><NavLink activeClassName="active" exact to="/">Main</NavLink></li>
-          <li><NavLink activeClassName="active" to="/one">One Point</NavLink></li>
-          <li><NavLink activeClassName="active" to="/two">Two Point</NavLink></li>
-          <li><NavLink activeClassName="active" to="/three">Three Point</NavLink></li>
-          <li><NavLink activeClassName="active" to="/four">Four Point</NavLink></li>
-          <li><NavLink activeClassName="active" to="/zero">Zero Point</NavLink></li>
+          <li><NavLink activeClassName="active" to="/one">One Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/two">Two Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/three">Three Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/four">Four Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/zero">Zero Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
+        </ul>
+      </div>
+      
+      <div className="navigation--mobile">
+        <ul>
+          <li><NavLink activeClassName="active" exact to="/">Main</NavLink></li>
+          <li><NavLink activeClassName="active" to="/one">One</NavLink></li>
+          <li><NavLink activeClassName="active" to="/two">Two</NavLink></li>
+          <li><NavLink activeClassName="active" to="/three">Three</NavLink></li>
+          <li><NavLink activeClassName="active" to="/four">Four</NavLink></li>
+          <li><NavLink activeClassName="active" to="/zero">Zero</NavLink></li>
           <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
         </ul>
       </div>

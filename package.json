@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
-    "react-router-dom": "^4.0.0"
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "node-sass": "^4.5.2",

@@ -35,14 +35,12 @@ a {
   text-decoration: none;
   background: black;
   color: currentColor;
-  padding: .7rem 1rem;
-  padding-right: 3rem;
+  padding: .5rem;
   margin: .5rem 0;
   display: block; }
-
-a.active {
-  background: white;
-  color: black; }
+  a.active {
+    background: white;
+    color: black; }
 
 .navigation {
   color: white;
@@ -61,3 +59,15 @@ a.active {
   border: 1px solid black;
   flex: 1;
   min-height: 100%; }
+
+@media (max-width: 700px) {
+  .navigation {
+    display: none; } }
+
+@media (min-width: 699px) {
+  .navigation--mobile {
+    display: none; } }
+
+.navigation--mobile a {
+  background: red;
+  flex-basis: 50%; }
