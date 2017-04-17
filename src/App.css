@@ -31,43 +31,247 @@ h4 {
 small {
   font-size: .667em; }
 
+/*@import 'https://fonts.googleapis.com/css?family=Trocchi';
+@import 'https://fonts.googleapis.com/css?family=Lato';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+@mixin bp-medium {
+  @media screen and (min-width:700px) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media screen and (min-width:1366px) {
+    @content;
+  }
+}
+
+@mixin bp-xlarge {
+  @media screen and (min-width:1900px) {
+    @content;
+  }
+}
+
+//Color Variables
+$background-color: #ECF0F1;
+$black: #000000;
+$green: #AEEE00;
+$pink: #FF358B;
+$skyblue: #01B0F0;
+
+
+$main-font: 'Lato', sans-serif;
+$title-font: 'Raleway', serif;
+$title-font2: 'Trocchi', cursive;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  color: $black;
+  font-family: $main-font;
+  font-size: 100%;
+}
+
+h1, h2, h3 {
+    font-family: $title-font;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+   @include bp-large {
+    width: 70%;
+   }
+   @include bp-xlarge {
+    width: 60%;
+   }
+  margin: auto;
+}
+
+.fa {
+  color: $skyblue;
+}
+
+.links {
+  padding: 0rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  font-size: .7em;
+  align-self: center;
+  @include bp-medium {
+      flex-basis: 30%;
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+}
+
+header {
+  width: 80%;
+    h1 {
+        font-family: $title-font2;
+        color: $pink;
+        font-weight: 500;
+        font-size: 2em;
+        margin: 1rem 0rem .5rem;
+        text-align: center;
+    }
+     @include bp-medium {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+          h1 {
+          text-align: left;
+          font-size: 2.5em;
+        }
+      }
+    @include bp-large {
+          h1 {
+          font-size: 3em;
+        }
+      }
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  flex:1;
+  @include bp-medium {
+    width: 80%;
+    justify-content: space-between;
+  }
+
+}
+
+section {
+  flex-basis: 80%;
+  border-bottom: .2rem solid $skyblue;
+  border-left: .2rem solid $skyblue;
+  padding: 0 1rem;
+  h2 {
+    font-size: 1.7em;
+      padding:0;
+      margin: 0;
+      //margin-left: 10%;
+  }
+  ul {
+    line-height: 1.5rem;
+    padding:0;
+    list-style-type: square;
+    list-style-position: inside;
+  }
+  @include bp-medium {
+     flex-basis: 60%;
+      margin: .5rem 0rem;
+  }
+  @include bp-large {
+    flex-basis: 70%;
+  }
+
+}
+
+aside {
+  display: flex;
+  flex-basis: 80%;
+  border-top: .2rem solid $pink;
+  border-right: .2rem solid $pink;
+  flex-direction: column;
+  order: -1;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  img {
+    display: none;
+
+  }
+  a {
+    color: $pink;
+  }
+  p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: center;
+    //padding: .2rem;
+    //margin: .1rem;
+    margin-top: 0;
+  }
+    @include bp-medium {
+      order: 0;
+      margin: .5rem 0rem;
+     flex-basis: 30%;
+     padding: .5rem;
+      p{
+        margin: .5rem;
+      }
+      img {
+        display: flex;
+        margin-bottom: 1rem;
+      }
+  }
+  @include bp-large {
+    //flex-basis: 25%;
+  }
+}
+
+
+
+footer {
+  text-align: center;
+
+}
+
+
+*/
 a {
   text-decoration: none;
-  background: black;
   color: currentColor;
-  padding: .5rem;
-  margin: .5rem 0;
-  display: block; }
-  a.active {
-    background: white;
-    color: black; }
+  font-size: 16px;
+  display: block;
+  line-height: 2rem; }
 
-.navigation {
-  color: white;
-  flex-basis: 30vmin;
-  justify-content: flex-end;
-  display: flex;
-  font-family: "Abril Fatface", cursive; }
+a.active {
+  background: white;
+  color: black; }
 
 .main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh; }
+  flex-wrap: wrap; }
+
+.navigation {
+  color: white;
+  font-family: "Montserrat", sans-serif; }
+
+.navigation__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%; }
+
+.navigation__list li {
+  background: black;
+  flex: 1 1 auto;
+  border: 1px solid white; }
 
 .page {
-  border: 1px solid black;
-  flex: 1;
-  min-height: 100%; }
-
-@media (max-width: 700px) {
-  .navigation {
-    display: none; } }
-
-@media (min-width: 699px) {
-  .navigation--mobile {
-    display: none; } }
-
-.navigation--mobile a {
-  background: red;
-  flex-basis: 50%; }
+  border: 1px solid black; }

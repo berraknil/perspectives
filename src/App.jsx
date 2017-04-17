@@ -12,7 +12,18 @@ import './App.css';
 
 const App = () => (
   <Router>
-    <main className="main">
+    <main className="main">  
+    <nav className="navigation">
+        <ul className="navigation__list">
+          <li><NavLink activeClassName="active" exact to="/">Main</NavLink></li>
+          <li><NavLink activeClassName="active" to="/one">One Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/two">Two Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/three">Three Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/four">Four Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/zero">Zero Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
+        </ul>
+      </nav>
       <div className="page">
         <Route exact path="/" component={Main} />
         <Route path="/one" component={OnePoint} />
@@ -22,29 +33,7 @@ const App = () => (
         <Route path="/zero" component={ZeroPoint} />
         <Route path="/about" component={About} />
       </div>
-      <div className="navigation">
-        <ul>
-          <li><NavLink activeClassName="active" exact to="/">Main</NavLink></li>
-          <li><NavLink activeClassName="active" to="/one">One Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/two">Two Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/three">Three Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/four">Four Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/zero">Zero Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
-        </ul>
-      </div>
-      
-      <div className="navigation--mobile">
-        <ul>
-          <li><NavLink activeClassName="active" exact to="/">Main</NavLink></li>
-          <li><NavLink activeClassName="active" to="/one">One</NavLink></li>
-          <li><NavLink activeClassName="active" to="/two">Two</NavLink></li>
-          <li><NavLink activeClassName="active" to="/three">Three</NavLink></li>
-          <li><NavLink activeClassName="active" to="/four">Four</NavLink></li>
-          <li><NavLink activeClassName="active" to="/zero">Zero</NavLink></li>
-          <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
-        </ul>
-      </div>
+    
     </main>
   </Router>
 );

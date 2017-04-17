@@ -1,12 +1,23 @@
-@import './reset.scss';
+//@import './reset.scss';
 @import './typography.scss';
 
 * {
   box-sizing: border-box;
 }
 
+html,
+body,
+ul,
+li,
+nav,
+a {  
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 20px;
   background: #DEE0E2;
   color: #24251C;
+  height: 100%;
 }

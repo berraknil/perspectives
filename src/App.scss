@@ -1,67 +1,48 @@
 @import './typography.scss';
+@import './mixins.scss';
 
 a {
   text-decoration: none;
-  background: black;
 	color: currentColor;
-  padding: .5rem;
-  //padding-right: 1rem;
-  margin: .5rem 0;
-  display: block;
-
+  
+  font-size: 16px;
   &.active {
     background: white;
     color: black;
   }
+  display: block;
+  line-height: 2rem;
 }
 
 
-.navigation {
-  //background:#E6E3DF;
-  //border: 1px solid black;
-  color: white;
-  flex-basis: 30vmin;
-  //align-items: center;
-  justify-content: flex-end;
-  display: flex; 
-  //min-height: 100%;
-  //padding-left: 1rem;
-  font-family: $title-font-one;
-}
 
 .main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
+  flex-wrap: wrap;  
 }
+
+.navigation {  
+  color: white;
+  font-family: $body-font;
+}
+
+.navigation__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width:100%;
+  li {
+  background: black;
+    flex: 1 1 auto;
+    border:1px solid white;
+   
+  }
+
+}
+
 
 .page {
   border: 1px solid black;  
-  flex: 1;
-  min-height: 100%;
-  //background: beige;
 
-}
-
-@media (max-width: 700px) {
-
-  .navigation {
-    display: none;
-  }
-
-}
-
-@media (min-width: 699px) {
-  .navigation--mobile {
-    display: none;
-  }
-}
-
-
-.navigation--mobile {
-  a {
-    background: red;
-    flex-basis: 50%;
-  }
 }
