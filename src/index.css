@@ -35,11 +35,7 @@ small {
   box-sizing: border-box; }
 
 html,
-body,
-ul,
-li,
-nav,
-a {
+body {
   margin: 0;
   padding: 0; }
 

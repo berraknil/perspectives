@@ -16,11 +16,11 @@ const App = () => (
     <nav className="navigation">
         <ul className="navigation__list">
           <li><NavLink activeClassName="active" exact to="/">Main</NavLink></li>
-          <li><NavLink activeClassName="active" to="/one">One Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/two">Two Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/three">Three Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/four">Four Point Perspective</NavLink></li>
-          <li><NavLink activeClassName="active" to="/zero">Zero Point Perspective</NavLink></li>
+          <li><NavLink activeClassName="active" to="/one">1</NavLink></li>
+          <li><NavLink activeClassName="active" to="/two">2</NavLink></li>
+          <li><NavLink activeClassName="active" to="/three">3</NavLink></li>
+          <li><NavLink activeClassName="active" to="/four">4</NavLink></li>
+          <li><NavLink activeClassName="active" to="/zero">5</NavLink></li>
           <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
         </ul>
       </nav>

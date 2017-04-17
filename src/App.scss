@@ -3,46 +3,44 @@
 
 a {
   text-decoration: none;
-	color: currentColor;
-  
+  color: currentColor;
   font-size: 16px;
   &.active {
     background: white;
     color: black;
   }
   display: block;
-  line-height: 2rem;
+  min-height: 100%;
+  padding: .5rem;
 }
-
-
 
 .main {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
-.navigation {  
+.navigation {
   color: white;
   font-family: $body-font;
+  min-width: 100%;
 }
 
 .navigation__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  width:100%;
+  flex-wrap: nowrap;
+  text-align: center; //width:100%;
+  align-items: center;
   li {
-  background: black;
-    flex: 1 1 auto;
-    border:1px solid white;
-   
-  }
+    background: black;
+    flex:1 1 auto;
+    border: 1px solid white;
 
+  }
 }
 
-
 .page {
-  border: 1px solid black;  
-
+  border: 1px solid black;
 }

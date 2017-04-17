@@ -247,11 +247,11 @@ a {
   color: currentColor;
   font-size: 16px;
   display: block;
-  line-height: 2rem; }
-
-a.active {
-  background: white;
-  color: black; }
+  min-height: 100%;
+  padding: .5rem; }
+  a.active {
+    background: white;
+    color: black; }
 
 .main {
   display: flex;
@@ -259,19 +259,21 @@ a.active {
 
 .navigation {
   color: white;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  min-width: 100%; }
 
 .navigation__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
-  width: 100%; }
-
-.navigation__list li {
-  background: black;
-  flex: 1 1 auto;
-  border: 1px solid white; }
+  align-items: center; }
+  .navigation__list li {
+    background: black;
+    flex: 1 1 auto;
+    border: 1px solid white; }
 
 .page {
   border: 1px solid black; }
