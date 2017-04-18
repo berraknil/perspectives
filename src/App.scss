@@ -5,6 +5,7 @@ a {
   text-decoration: none;
   color: currentColor;
   font-size: 16px;
+  //font-weight: 600;
     background: black;
   &.active {
     background: white;
@@ -12,7 +13,7 @@ a {
   }
   display: block;
   min-height: 100%;
-  padding: .6rem;
+  padding: .6rem .5rem;
 }
 
 .main {
@@ -23,7 +24,7 @@ a {
 
 .navigation {
   color: white;
-  font-family: $body-font;
+  font-family: $title-font5;
   min-width: 100%;
 }
 

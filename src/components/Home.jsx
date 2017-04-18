@@ -1,6 +1,7 @@
 import React from 'react';
 import Content from './Content';
 import './Content.css';
+import './Home.css';
 
 const Home = (props) => {
   return (
