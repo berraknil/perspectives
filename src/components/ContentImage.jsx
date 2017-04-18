@@ -1,10 +1,13 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 import './ContentImage.css'
 
-const ContentImage = (props) => {
-  return (
-    <img className="content__image" src={props.src} alt={props.alt} />
-  );
-};
+const ContentImage = props => <img className="content__image" src={props.src} alt={props.alt} />
 
-export default ContentImage;
+ContentImage.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+}
+
+
+export default ContentImage

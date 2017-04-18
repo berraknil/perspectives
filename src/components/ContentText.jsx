@@ -1,12 +1,18 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 import './ContentText.css'
 
-const ContentText = (props) => {
-  return (
-    <section className="content__text">
-      {props.children}
-    </section>
-  );
-};
+const ContentText = props => (
+  <section className="content__text">
+    {props.children}
+  </section>
+  )
 
-export default ContentText;
+ContentText.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+}
+
+export default ContentText
