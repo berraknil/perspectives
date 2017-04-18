@@ -6,7 +6,7 @@ import TwoPoint from './components/TwoPoint';
 import ThreePoint from './components/OnePoint';
 import FourPoint from './components/OnePoint';
 import ZeroPoint from './components/OnePoint';
-import Main from './components/Main';
+import Home from './components/Home';
 import About from './components/About';
 import './App.css';
 
@@ -15,17 +15,17 @@ const App = () => (
     <main className="main">  
     <nav className="navigation">
         <ul className="navigation__list">
-          <li><NavLink activeClassName="active" exact to="/">Main</NavLink></li>
+          <li><NavLink activeClassName="active" exact to="/">Home</NavLink></li>
           <li><NavLink activeClassName="active" to="/one">1</NavLink></li>
           <li><NavLink activeClassName="active" to="/two">2</NavLink></li>
           <li><NavLink activeClassName="active" to="/three">3</NavLink></li>
           <li><NavLink activeClassName="active" to="/four">4</NavLink></li>
-          <li><NavLink activeClassName="active" to="/zero">5</NavLink></li>
+          <li><NavLink activeClassName="active" to="/zero">0</NavLink></li>
           <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
         </ul>
       </nav>
       <div className="page">
-        <Route exact path="/" component={Main} />
+        <Route exact path="/" component={Home} />
         <Route path="/one" component={OnePoint} />
         <Route path="/two" component={TwoPoint} />
         <Route path="/three" component={ThreePoint} />

@@ -1,7 +1,8 @@
 import React from 'react';
-import Content from './Content'
+import Content from './Content';
+import './Content.css';
 
-const Main = (props) => {
+const Home = (props) => {
   return (
     <Content>
       <h1>Types of Perspective</h1>
@@ -9,4 +10,4 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default Home;

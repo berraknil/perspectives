@@ -1,12 +1,10 @@
 import React from 'react';
-import './ContentText.css'
+import './ContentImage.css'
 
-const ContentText = (props) => {
+const ContentImage = (props) => {
   return (
-    <p className="content__text">
-      {props.children}
-    </p>
+    <img className="content__image" src={props.src} alt={props.alt} />
   );
 };
 
-export default ContentText;
+export default ContentImage;

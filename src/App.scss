@@ -18,6 +18,7 @@ a {
 .main {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .navigation {
@@ -50,5 +51,7 @@ a {
 }
 
 .page {
-  border: 1px solid black;
+  //border: 1px solid black;
+  //margin: auto;
+  //border: 1px solid red;
 }

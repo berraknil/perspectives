@@ -1,5 +1,4 @@
 //@import './reset.scss';
-@import './typography.scss';
 
 * {
   box-sizing: border-box;
@@ -15,5 +14,8 @@ body {
   font-size: 20px;
   background: #DEE0E2;
   color: #24251C;
-  height: 100%;
+}
+
+img {
+  max-width: 100%;
 }
