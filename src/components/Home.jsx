@@ -6,7 +6,7 @@ import './Home.css';
 const Home = (props) => {
   return (
     <Content>
-      <h1>Types of Perspective</h1>
+      <h1>Perspective Types</h1>
     </Content>
   );
 };
