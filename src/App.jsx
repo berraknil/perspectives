@@ -1,19 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
-import OnePoint from './components/OnePoint';
-import TwoPoint from './components/TwoPoint';
-import ThreePoint from './components/OnePoint';
-import FourPoint from './components/OnePoint';
-import ZeroPoint from './components/OnePoint';
-import Home from './components/Home';
-import About from './components/About';
-import './App.css';
+import OnePoint from './components/OnePoint'
+import TwoPoint from './components/TwoPoint'
+import ThreePoint from './components/ThreePoint'
+import FourPoint from './components/OnePoint'
+import ZeroPoint from './components/OnePoint'
+import Home from './components/Home'
+import About from './components/About'
+import './App.css'
 
 const App = () => (
   <Router>
-    <main className="main">  
-    <nav className="navigation">
+    <main className="main">
+      <nav className="navigation">
         <ul className="navigation__list">
           <li><NavLink activeClassName="active" exact to="/">Home</NavLink></li>
           <li><NavLink activeClassName="active" to="/one">1</NavLink></li>
@@ -33,9 +33,9 @@ const App = () => (
         <Route path="/zero" component={ZeroPoint} />
         <Route path="/about" component={About} />
       </div>
-    
+
     </main>
   </Router>
-);
+)
 
-export default App;
+export default App
