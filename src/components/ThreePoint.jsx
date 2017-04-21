@@ -1,14 +1,9 @@
-import { Motion, spring } from 'react-motion'
-
 import React from 'react'
 import Content from './Content'
 import ContentText from './ContentText'
 
 const ThreePointPerspective = () => (
   <Content>
-    <Motion defaultStyle={{ x: 0 }} style={{ x: spring(10) }}>
-      {value => <div>{value.x}</div>}
-    </Motion>
     <ContentText>
       <h3>Two Point Perspective </h3>
       <p>

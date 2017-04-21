@@ -5,7 +5,7 @@ import './Home.css'
 
 const Home = () => (
   <Content>
-    <h1>Perspective Types</h1>
+    <h1>Linear Perspectives</h1>
   </Content>
 )
 
