@@ -49,7 +49,7 @@ const OnePointPerspective = () => (
       </svg>
     </ContentImage>
     <ContentText>
-      <h4>One-Point Perspective </h4>
+      <h3>One-Point Perspective </h3>
       <p>
         A drawing has one-point perspective when it contains
         only one vanishing point on the horizon line. This
