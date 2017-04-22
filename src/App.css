@@ -132,7 +132,9 @@ a.active {
 
 .main {
   display: flex;
-  flex-wrap: wrap;
+  /*
+  flex-wrap: wrap;*/
+  flex-direction: column;
   height: 100vh; }
 
 .navigation {
@@ -162,4 +164,4 @@ a.active {
   border-right: none; }
 
 .page {
-  min-height: 95vh; }
+  flex: 1; }
