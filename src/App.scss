@@ -1,6 +1,14 @@
 @import './typography.scss';
 @import './mixins.scss';
 
+
+
+body {
+  font-size: 20px;
+  background: white;
+  color: #24251C;
+}
+
 a {
   text-decoration: none;
   color: currentColor;

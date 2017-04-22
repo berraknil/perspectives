@@ -1,5 +1,30 @@
-@import '../typography.scss';
+@import '../../typography.scss';
 
-h1 {  
-  font-family: $title-font-one;
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  //border:1px solid red;
+  font-family: $title-font2;
+  align-items: flex-end;
+  height: 92vh;
+  width: 100vw;
+  justify-content: flex-end;
+  //padding: .5rem;
+  h1 {
+    margin: 0;
+    
+    padding: 0 1rem .5rem 0;
+  }
+}
+
+
+.home__subheading {
+  //align-self: center;
+  //writing-mode: vertical-lr;
+  //font-size: 2.6rem;
+}
+
+.home__subheading {
 }

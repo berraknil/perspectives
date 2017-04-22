@@ -15,7 +15,6 @@ h1, h2, h3, h4 {
   line-height: 1.2; }
 
 h1 {
-  margin-top: 0;
   font-size: 2.441em; }
 
 h2 {
@@ -306,6 +305,11 @@ footer {
 
 
 */
+body {
+  font-size: 20px;
+  background: white;
+  color: #24251C; }
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -314,9 +318,10 @@ a {
   display: block;
   min-height: 100%;
   padding: .6rem .5rem; }
-  a.active {
-    background: white;
-    color: black; }
+
+a.active {
+  background: white;
+  color: black; }
 
 .main {
   display: flex;
@@ -336,12 +341,15 @@ a {
   flex-wrap: nowrap;
   text-align: center;
   align-items: center; }
-  .navigation__list li {
-    flex: 1;
-    border: 1px solid white;
-    border-top: none;
-    border-bottom: none; }
-    .navigation__list li:first-child {
-      border-left: none; }
-    .navigation__list li:last-child {
-      border-right: none; }
+
+.navigation__list li {
+  flex: 1;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none; }
+
+.navigation__list li:first-child {
+  border-left: none; }
+
+.navigation__list li:last-child {
+  border-right: none; }
