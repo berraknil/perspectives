@@ -1,0 +1,45 @@
+
+.top-cube {
+  stroke-dasharray: 5707;
+  stroke-dashoffset: 5707;
+  animation: anim1 7s ease-in-out forwards;
+}
+
+.right-cube {
+  stroke-dasharray: 10448;
+  stroke-dashoffset: 10448;
+  animation: anim2 6s ease-in-out forwards;
+}
+
+.left-cube {
+  stroke-dasharray: 7274;
+  stroke-dashoffset: 7274;
+  animation: anim3 7s ease-in-out forwards;
+}
+
+@keyframes anim1 {
+  from {
+    stroke-dashoffset: 5707;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    stroke-dashoffset: 10448;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes anim3 {
+  from {
+    stroke-dashoffset: 7274;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

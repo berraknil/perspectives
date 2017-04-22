@@ -1,0 +1,16 @@
+
+
+.three-point {
+  stroke-dasharray: 3848;
+  stroke-dashoffset: 3848;
+  animation: anim 6s ease-in-out forwards;
+}
+
+ @keyframes anim {
+  from {
+    stroke-dashoffset: 3848;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

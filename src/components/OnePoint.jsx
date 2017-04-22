@@ -1,8 +1,6 @@
 import React from 'react'
 import Content from './Content'
 import ContentText from './ContentText'
-import ContentImage from './ContentImage'
-import OnePoint from './OnePoint.svg'
 import './OnePoint.css'
 
 const OnePointPerspective = () => (
