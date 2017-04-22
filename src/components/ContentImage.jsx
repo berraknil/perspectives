@@ -2,12 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './ContentImage.css'
 
-const ContentImage = props => <img className="content__image" src={props.src} alt={props.alt} />
+const ContentImage = ({ children }) => (
+  <div className="content__image">
+    {children}
+  </div>
+)
 
 ContentImage.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 }
-
 
 export default ContentImage

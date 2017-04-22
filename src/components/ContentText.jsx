@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './ContentText.css'
 
-const ContentText = props => (
+const ContentText = ({ children }) => (
   <section className="content__text">
-    {props.children}
+    {children}
   </section>
   )
 
