@@ -1,14 +1,14 @@
 
 
 .two-point {
-  stroke-dasharray: 3840;
-  stroke-dashoffset: 3840;
+  stroke-dasharray: 3830;
+  stroke-dashoffset: 3830;
   animation: anim 8s ease-in-out forwards;
 }
 
  @keyframes anim {
   from {
-    stroke-dashoffset: 3840;
+    stroke-dashoffset: 3830;
   }
   to {
     stroke-dashoffset: 0;
