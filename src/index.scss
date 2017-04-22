@@ -3,7 +3,11 @@
 }
 
 html,
-body {
+body,
+main,
+div,
+section,
+nav {
   margin: 0;
   padding: 0;
 }
@@ -11,3 +15,4 @@ body {
 img {
   max-width: 100%;
 }
+

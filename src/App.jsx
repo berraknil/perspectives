@@ -20,13 +20,13 @@ const App = () => (
           <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
         </ul>
       </nav>
-      <div className="page">
+      <section className="page">
         <Route exact path="/" component={Home} />
         <Route path="/one" component={OnePoint} />
         <Route path="/two" component={TwoPoint} />
         <Route path="/three" component={ThreePoint} />
         <Route path="/about" component={About} />
-      </div>
+      </section>
 
     </main>
   </Router>

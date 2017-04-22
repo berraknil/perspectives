@@ -1,15 +1,19 @@
 @import '../../typography.scss';
-
 .home {
-  height: 90vh;
-  padding: .5rem;
+  background: url('../../images/perspectiveBG.jpg') center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-
-h1, h3, h4 {
-  margin: 0;
-}
+  height: 100%;
 }
 
+.home__text {
+  background-color: rgba(255, 255, 255, 0.7);
+  min-width: 100%;
+  padding: .6rem .4rem;
+  h1,
+  h4 {
+    margin: 0;
+  }
+}
