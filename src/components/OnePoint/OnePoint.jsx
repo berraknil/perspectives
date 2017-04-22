@@ -1,6 +1,6 @@
 import React from 'react'
-import Content from './Content'
-import ContentText from './ContentText'
+import Content from '../Content'
+import ContentText from '../ContentText'
 import './OnePoint.css'
 
 const OnePointPerspective = () => (
