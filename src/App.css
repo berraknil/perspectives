@@ -162,4 +162,4 @@ a.active {
   border-right: none; }
 
 .page {
-  height: 94vh; }
+  min-height: 95vh; }
