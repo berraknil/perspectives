@@ -33,14 +33,12 @@ body {
   font-size: 24px;
   background: white;
   color: #24251C; }
-
-@media screen and (min-width: 62em) {
-  body {
-    font-size: 26px; } }
-
-@media screen and (min-width: 110em) {
-  body {
-    font-size: 32px; } }
+  @media screen and (min-width: 62em) {
+    body {
+      font-size: 26px; } }
+  @media screen and (min-width: 110em) {
+    body {
+      font-size: 32px; } }
 
 .app {
   display: flex;
