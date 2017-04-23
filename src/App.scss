@@ -27,48 +27,6 @@ a {
   height: 100vh;
 }
 
-.navigation {
-  color: white;
-  font-family: $title-font5;
-  min-width: 100%;
-}
-
-.navigation__list--mobile,
-.navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: center; //width:100%;
-  align-items: center;
-  li {
-    flex: 1;
-    border: 1px solid white;
-    border-top: none;
-    border-bottom: none;
-    &:first-child {
-      border-left: none;
-    }
-    &:last-child {
-      border-right: none;
-    }
-  }
-}
-
-.navigation__list--mobile {
-  @include bp-medium {
-    display: none;
-  }
-}
-
-.navigation__list {
-  display: none;
-  
-  @include bp-medium {
-    display: flex;
-  }
-}
 
 .page {
   flex: 1;
