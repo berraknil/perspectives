@@ -1,9 +1,25 @@
 @import '../../media_queries.scss';
-@import '../../typography.scss';
+
+$open-sans: 'Open Sans', sans-serif;
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  font-size: 16px; 
+  background: black;
+  &.active {
+    background: white;
+    color: black;
+  }
+  display: block;
+  min-height: 100%;
+  padding: .8rem .6rem;
+}
+
 
 .navigation {
   color: white;
-  font-family: $title-font5;
+  font-family: $open-sans;
   min-width: 100%;
 }
 
@@ -14,7 +30,7 @@
   list-style-type: none;
   display: flex;
   flex-wrap: nowrap;
-  text-align: center; //width:100%;
+  text-align: center;
   align-items: center;
   li {
     flex: 1;
@@ -37,8 +53,7 @@
 }
 
 .navigation__list {
-  display: none;
-  
+  display: none;  
   @include bp-medium {
     display: flex;
   }

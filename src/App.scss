@@ -1,5 +1,5 @@
 @import './typography.scss';
-@import './media_queries.scss';
+
 
 body {
   font-size: 20px;
@@ -7,27 +7,9 @@ body {
   color: #24251C;
 }
 
-a {
-  text-decoration: none;
-  color: currentColor;
-  font-size: 16px; //font-weight: 600;
-  background: black;
-  &.active {
-    background: white;
-    color: black;
-  }
-  display: block;
-  min-height: 100%;
-  padding: .8rem .6rem;
-}
-
-.main {
+.app {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-
-.page {
-  flex: 1;
-}
