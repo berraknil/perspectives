@@ -1,5 +1,15 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem;  
+  min-height: 100%;
+  flex: 1;
+  @media screen and (min-width: 960px) {
+    flex-direction: row;
+    align-items: center;
+      padding: 1rem;
+    div {
+      padding: 1rem;
+    }
   }
+}

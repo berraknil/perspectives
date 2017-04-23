@@ -27,11 +27,12 @@ const TwoPointPerspective = () => (
     <ContentText>
       <h3>Two Point Perspective </h3>
       <p>
-        A drawing has one-point perspective when it contains only one vanishing point on the horizon line. This type of perspective is typically used for images of roads, railway tracks, hallways, or buildings viewed so that the front is directly facing the viewer. Any objects that are made up of lines either directly parallel with the viewer's line of sight or directly perpendicular (the railroad slats) can be represented with one-point perspective. These parallel lines converge at the vanishing point.
+        A drawing has two-point perspective when it contains two vanishing points on the horizon line. In an illustration, these vanishing points can be placed arbitrarily along the horizon. Two-point perspective can be used to draw the same objects as one-point perspective, rotated: looking at the corner of a house, or at two forked roads shrinking into the distance, for example. One point represents one set of parallel lines, the other point represents the other. 
       </p>
       <p>
-        One-point perspective exists when the picture plane is parallel to two axes of a rectilinear (or Cartesian) scene – a scene which is composed entirely of linear elements that intersect only at right angles. If one axis is parallel with the picture plane, then all elements are either parallel to the picture plane (either horizontally or vertically) or perpendicular to it. All elements that are parallel to the picture plane are drawn as parallel lines. All elements that are perpendicular to the picture plane converge at a single point (a vanishing point) on the horizon.
+        Two-point perspective exists when the painting plate is parallel to a Cartesian scene in one axis (usually the z-axis) but not to the other two axes. If the scene being viewed consists solely of a cylinder sitting on a horizontal plane, no difference exists in the image of the cylinder between a one-point and two-point perspective. Two-point perspective has one set of lines parallel to the picture plane and two sets oblique to it. Parallel lines oblique to the picture plane converge to a vanishing point, which means that this set-up will require two vanishing points.
       </p>
+
     </ContentText>
 
   </Content>

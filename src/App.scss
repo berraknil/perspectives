@@ -1,10 +1,17 @@
 @import './typography.scss';
-
-
 body {
-  font-size: 20px;
+  font-size: 24px;
   background: white;
   color: #24251C;
+  @media screen and (min-width: 62em) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 74em) {
+    //font-size: 30px;
+  }
+   @media screen and (min-width: 110em) {
+    font-size: 32px;
+  }
 }
 
 .app {
@@ -12,4 +19,3 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-
