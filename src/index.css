@@ -6,7 +6,8 @@ body,
 main,
 div,
 section,
-nav {
+nav,
+ul {
   margin: 0;
   padding: 0; }
 

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import './ContentText.css'
 
 const ContentText = ({ children }) => (
-  <section className="content__text">
+  <div className="content__text">
     {children}
-  </section>
+  </div>
   )
 
 ContentText.propTypes = {
