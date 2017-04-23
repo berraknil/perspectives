@@ -94,24 +94,6 @@ h3 {font-size: 2.25em;}
 h4 {font-size: 1.5em;}
 
 small {font-size: .667em;}*/
-/*@mixin bp-medium {
-  @media screen and (min-width: 44em) {
-    @content;
-  }
-}
-
-@mixin bp-large {
-  @media screen and (min-width: 74em) {
-    @content;
-  }
-}
-
-@mixin bp-xlarge {
-  @media screen and (min-width: 110em) {
-    @content;
-  }
-}
-*/
 body {
   font-size: 20px;
   background: white;
@@ -124,7 +106,7 @@ a {
   background: black;
   display: block;
   min-height: 100%;
-  padding: .6rem .5rem; }
+  padding: .8rem .6rem; }
 
 a.active {
   background: white;
@@ -132,8 +114,6 @@ a.active {
 
 .main {
   display: flex;
-  /*
-  flex-wrap: wrap;*/
   flex-direction: column;
   height: 100vh; }
 
@@ -142,6 +122,7 @@ a.active {
   font-family: "Open Sans", sans-serif;
   min-width: 100%; }
 
+.navigation__list--mobile,
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -151,17 +132,31 @@ a.active {
   text-align: center;
   align-items: center; }
 
+.navigation__list--mobile li,
 .navigation__list li {
   flex: 1;
   border: 1px solid white;
   border-top: none;
   border-bottom: none; }
 
+.navigation__list--mobile li:first-child,
 .navigation__list li:first-child {
   border-left: none; }
 
+.navigation__list--mobile li:last-child,
 .navigation__list li:last-child {
   border-right: none; }
+
+@media screen and (min-width: 44em) {
+  .navigation__list--mobile {
+    display: none; } }
+
+.navigation__list {
+  display: none; }
+
+@media screen and (min-width: 44em) {
+  .navigation__list {
+    display: flex; } }
 
 .page {
   flex: 1; }

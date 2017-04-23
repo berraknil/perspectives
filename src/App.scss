@@ -1,7 +1,5 @@
 @import './typography.scss';
-@import './mixins.scss';
-
-
+@import './media_queries.scss';
 
 body {
   font-size: 20px;
@@ -12,21 +10,19 @@ body {
 a {
   text-decoration: none;
   color: currentColor;
-  font-size: 16px;
-  //font-weight: 600;
-    background: black;
+  font-size: 16px; //font-weight: 600;
+  background: black;
   &.active {
     background: white;
     color: black;
   }
   display: block;
   min-height: 100%;
-  padding: .6rem .5rem;
+  padding: .8rem .6rem;
 }
 
 .main {
-  display: flex;/*
-  flex-wrap: wrap;*/
+  display: flex;
   flex-direction: column;
   height: 100vh;
 }
@@ -35,9 +31,9 @@ a {
   color: white;
   font-family: $title-font5;
   min-width: 100%;
-  //height: 7vh;
 }
 
+.navigation__list--mobile,
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -47,7 +43,6 @@ a {
   text-align: center; //width:100%;
   align-items: center;
   li {
-    //flex:1 1 auto;
     flex: 1;
     border: 1px solid white;
     border-top: none;
@@ -58,6 +53,20 @@ a {
     &:last-child {
       border-right: none;
     }
+  }
+}
+
+.navigation__list--mobile {
+  @include bp-medium {
+    display: none;
+  }
+}
+
+.navigation__list {
+  display: none;
+  
+  @include bp-medium {
+    display: flex;
   }
 }
 
