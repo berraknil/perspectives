@@ -4,12 +4,15 @@
   padding: 1rem;  
   min-height: 100%;
   flex: 1;
+  
   @media screen and (min-width: 960px) {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
       padding: 1rem;
     div {
-      padding: 1rem;
+      margin: 0 2rem;
+      flex: 1;
     }
   }
 }
