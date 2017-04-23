@@ -5,12 +5,10 @@
   min-height: 100%;
   flex: 1; }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 62em) {
   .content {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem; }
+    align-items: center; }
   .content div {
-    margin: 0 2rem;
+    margin: 0 1rem;
     flex: 1; } }
