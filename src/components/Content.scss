@@ -4,6 +4,12 @@
   padding: 1rem;
   min-height: 100%;
   flex: 1;
+  @media screen and (max-width: 60em) {
+    h3,
+    p {
+      margin: .5rem 0;
+    }
+  }
   @media screen and (min-width: 62em) {
     flex-direction: row;
     align-items: center;
