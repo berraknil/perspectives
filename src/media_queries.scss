@@ -1,3 +1,9 @@
+@mixin bp-small {
+  @media screen and (min-width: 40em){
+    @content;
+  }
+}
+
 @mixin bp-medium {
   @media screen and (min-width: 62em) {
     @content;
@@ -13,5 +19,5 @@
 @mixin bp-xlarge {
   @media screen and (min-width: 110em) {
     @content;
-  }
+  } 
 }

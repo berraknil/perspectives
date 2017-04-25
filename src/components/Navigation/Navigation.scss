@@ -1,9 +1,7 @@
 @import '../../media_queries.scss';
 
+$droid-sans: 'Droid Sans', sans-serif;
 
-$droid-sans: 'Droid Sans',
-
-sans-serif;
 .navigation {
   color: white;
   font-family: $droid-sans;
@@ -20,7 +18,7 @@ sans-serif;
     display: block;
     min-height: 100%;
     padding: .8em .6em;
-    @media screen and (min-width: 110em) {
+    @include bp-large {
       font-size: 20px;
     }
   }

@@ -3,7 +3,7 @@ import './About.css'
 
 const About = () => (
   <div className="about">
-    <div className="about__text">    
+    <div className="about__text">
       <h4>
         Built with
         {' '}
@@ -34,7 +34,7 @@ const About = () => (
           rel="noopener noreferrer"
         >
           GitHub
-        </a> <br /> contact me <a
+        </a> <br /> you can contact me <a
           href="https://berraknil.github.io/"
           target="_blank"
           rel="noopener noreferrer"

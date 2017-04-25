@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './ContentImage.css'
 
 const ContentImage = ({ children }) => (
   <div className="content__image">

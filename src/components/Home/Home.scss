@@ -1,3 +1,5 @@
+@import '../../media_queries.scss';
+
 .home {
   background: url('./HomeBG.jpg') center;
   background-size: cover;
@@ -5,40 +7,37 @@
   flex-direction: column;
   justify-content: flex-end;
   min-height: 100%;
-  @media screen and (min-width: 40em) {
-    flex-direction: row;
+  @include bp-small {
     align-items: center;
+    flex-direction: row;
   }
 }
 
 .home__text {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  padding: .6rem .4rem;
+  background-color: rgba(255, 255, 255, .8);
   font-size: 20px;
+  padding: .6rem .4rem;
+  width: 100%;
   h1,
   h4 {
     margin: 0;
   }
-   @media screen and (min-width: 40em) {
-    width: 35%;
-    margin-right: 5%;
+  @include bp-small {
     background-color: transparent;
-  }
-   @media screen and (min-width: 62em) {
-   /* width: 35%;
     margin-right: 5%;
-    background-color: transparent;*/
+    width: 35%;
+  }
+  @include bp-medium {
     font-size: 24px;
   }
-  @media screen and (min-width: 74em) {
+  
+  @include bp-large {
+    margin-right: 10%;
     width: 30%;
-    margin-right: 10%;
-    //font-size: 26px;
   }
-  @media screen and (min-width: 110em) {
-    width: 25%;
-    margin-right: 10%;
+  
+  @include bp-xlarge {
     font-size: 28px;
+    width: 25%;
   }
 }
