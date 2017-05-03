@@ -11,12 +11,15 @@
 .about__text {
   text-align: right;
   background-color: rgba(255, 255, 255, 0.7); 
+  padding: .5rem;
+
   a {
     color:  #2E87D9;
     text-decoration: none;
   }
-  padding: .5rem;
-  h3, h4 {
+
+  h3,
+  h4 {
     margin: 0;
   }
 }

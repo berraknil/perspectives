@@ -32,9 +32,7 @@ const TwoPointPerspective = () => (
       <p>
         Two-point perspective exists when the painting plate is parallel to a Cartesian scene in one axis (usually the z-axis) but not to the other two axes. If the scene being viewed consists solely of a cylinder sitting on a horizontal plane, no difference exists in the image of the cylinder between a one-point and two-point perspective. Two-point perspective has one set of lines parallel to the picture plane and two sets oblique to it. Parallel lines oblique to the picture plane converge to a vanishing point, which means that this set-up will require two vanishing points.
       </p>
-
     </ContentText>
-
   </Content>
 )
 
