@@ -1,4 +1,4 @@
-Created with React, React-Router v4, Redux, Redux-Promise, fetching data from Wordpress REST API using Axios. Deployed with Zeit's Now.
+Created with React and React-Router v4.
 
 See the website in action 
 https://perspectives-gzfmewkdom.now.sh
